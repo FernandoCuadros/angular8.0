@@ -1,0 +1,19 @@
+
+
+json-server db.json -w
+
+// Get: lista de usuarios
+http://localhost:3000/users
+
+// Post: crear un usuario
+// {...}
+http://localhost:3000/users
+
+// Delete: eliminar usuario
+http://localhost:3000/users/{userId}
+
+// Put: actualizar usuario
+// {...}
+http://localhost:3000/users/{userId}
+
+ng serve -o

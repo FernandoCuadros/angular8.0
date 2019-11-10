@@ -1,0 +1,6 @@
+<div class="columns">
+    <div class="column is-10 is-offset-1" *ngIf="product">
+        <h2 class="subtitle is-3 has-text-centered">Actualizar Producto</h2>
+        <app-product-form [model] = "product" (completedform) = onUpdate($event)></app-product-form>
+    </div>
+</div>

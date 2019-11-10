@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Fernando",
+      "edad": 36,
+      "email": "fcuadros@gmail.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan",
+      "edad": 20,
+      "email": "jmartinez@gmail.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Sofia",
+      "edad": 24,
+      "email": "sbarboza@gmail.com"
+    },
+    {
+      "id": 5,
+      "nombre": "Miguel",
+      "edad": 58,
+      "email": "mlarosa@gmail.com"
+    },
+    {
+      "id": 4,
+      "nombre": "Luis",
+      "edad": 38,
+      "email": "lleandro@gmail.com"
+    }
+  ]
+}

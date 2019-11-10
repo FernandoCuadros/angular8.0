@@ -1,0 +1,13 @@
+//Get listar 
+http://localhost:3000/users/
+
+//Post:crear, listar con parametros
+{...json}
+http://localhost:3000/users/
+
+//Delete: eliminar
+http://localhost:3000/users/10
+
+//Put: actualizar
+{...json}
+http://localhost:3000/users/10

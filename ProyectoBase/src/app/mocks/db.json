@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "Thermo T3",
+      "detail": "Quemador de grasa natural con sabor a Te con limón",
+      "price": 112,
+      "stock": 20,
+      "id": 100
+    },
+    {
+      "name": "No Stress",
+      "detail": "Vigorizante natural que ayuda a la concentración con sabor a durazno",
+      "price": 124,
+      "stock": 20,
+      "id": 101
+    },
+    {
+      "name": "Vita Xtra T Plus",
+      "detail": "Energizante natural con sabor a chicha",
+      "price": 112,
+      "stock": 20,
+      "id": 102
+    }
+  ],
+  "users":[
+    {
+      "id" : 1,
+      "name" : "Fernando",
+      "surname" : "Cuadros",
+      "email" : "fcuadros@gmail.com",
+      "password" : "4ngul4r8"
+    },
+    {
+      "id" : 2,
+      "name" : "Marco",
+      "surname" : "Torres",
+      "email" : "mtorres@gmail.com",
+      "password" : "4ngul4r8"
+    },
+    {
+      "id" : 3,
+      "name" : "Ana",
+      "surname" : "Perez",
+      "email" : "aperez@gmail.com",
+      "password" : "4ngul4r8"
+    }    
+  ]
+
+}

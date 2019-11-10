@@ -1,0 +1,7 @@
+ng m modules/admin >>crea modulo
+ng m modules/admin -m app >>crea un modulo y lo registra en el module principal
+ng g c modules/header >>crea components, html, css, spec
+--skip--tests >>no generar los specs
+import { InputTextModule as m1 } from 'primeng/inputtext'; >> AS te permite importar modules, componente, etc con el mismo nombre
+
+Filtros en css titlecase, currency

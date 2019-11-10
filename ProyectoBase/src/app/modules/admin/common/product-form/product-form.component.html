@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="columns">
+        <div class="column is-8 is-offset-2">
+            <form action="" novalidate autocomplete="off" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                <div class="field">
+                    <div class="control">
+                        <input id="name" class="input" type="text" formControlName="name" placeholder="Nombre (min. 6 caracteres)" required/>
+                        <p class="help is-danger" *ngIf="name.touched && name.errors?.required">
+                            El nombre es requerido.
+                        </p>
+                        <p class="help is-danger" *ngIf="name.errors?.minlength">
+                            El nombre debe tener al menos 06 caracteres.
+                        </p>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <textarea id="detail" class="textarea" type="text" formControlName="detail" placeholder="Detalle (min. 15 caracteres)"></textarea>
+                        <p class="help is-danger" *ngIf="detail.touched && detail.errors?.required">
+                            El detalle es requerido.
+                        </p>
+                        <p class="help is-danger" *ngIf="detail.errors?.minlength">
+                            El detalle debe tener al menos 15 caracteres.
+                        </p>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input id="price" class="input" type="number" formControlName="price" placeholder="Precio: ej. 15.99" />
+                        <p class="help is-danger" *ngIf="price.touched && price.errors?.required">
+                            El precio es requerido.
+                        </p>
+                        <p class="help is-danger" *ngIf="price.errors?.min">
+                            El price debe ser mayor a 1.
+                        </p>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input id="stock" class="input" type="number" formControlName="stock" placeholder="Stock: ej. 5" />
+                        <p class="help is-danger" *ngIf="stock.touched && stock.errors?.required">
+                            El stock es requerido.
+                        </p>
+                        <p class="help is-danger" *ngIf="stock.errors?.min">
+                            El stock debe mayor o igual a CERO.
+                        </p>
+                    </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                        <button type="button" class="button" (click)="onBack()">Regresar</button>
+                    </p>
+                    <p class="control">
+                        <button type="submit" [disabled]="!productForm.valid" class="button is-dark">Guardar</button>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+NgModule:
+##Declarations: defines componentes que necesitan.
+##Imports: defines modules que se necesitan.
+##Providers: defines servicios que se inyectan.
+##Bootstrap: solo se declara el componente principal de la aplicacion AppComponent 
